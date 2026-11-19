@@ -1,6 +1,16 @@
 # Custom ROMs for the Samsung Galaxy M20 (m20lte)
 
-Unofficial test builds on the Linux 5.10 kernel port. Signed with test keys.
+## Official
+
+| ROM | Android | Download |
+|---|---|---|
+| **LineageOS 22.2** (official, weekly) | 15 | [download.lineageos.org/devices/m20lte](https://download.lineageos.org/devices/m20lte) |
+
+Install guide: [wiki.lineageos.org/devices/m20lte/install](https://wiki.lineageos.org/devices/m20lte/install)
+
+## Unofficial
+
+Test builds on the Linux 5.10 kernel port. Signed with test keys.
 Each ROM zip must be flashed with **its own recovery** from the same row.
 
 | ROM | Android | Variant | ROM zip | Recovery (Odin, AP) |
