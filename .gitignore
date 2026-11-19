@@ -2,3 +2,4 @@ gen.py
 README.in
 .names.json
 update.sh
+status.json
