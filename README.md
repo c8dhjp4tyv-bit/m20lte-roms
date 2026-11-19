@@ -19,6 +19,7 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 | RisingOS Revived 9 | 17 | Vanilla | ⏳ Untested | [RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/1qg8F-aey--n-nHfNFiw4DJGQGZI0QJmc/view?usp=sharing) | [RisingOS-9-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1ZKZ39vggXpRtRU7A-UY90FA6Rr4C9Nxf/view?usp=sharing) |
 | Project Infinity X 4.2 | 17 | GApps | ⏳ Untested | [Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip](https://drive.google.com/file/d/1NpiurifNjmIVrhIKPcByqw7vdFUW8gFW/view?usp=sharing) | [Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1AUsZxXJTBuv-UUcGaoAYLVMpUEa4vVbj/view?usp=sharing) |
 | Project Infinity X 4.2 | 17 | Vanilla | ⏳ Untested | [Project_Infinity-X-4.2-m20lte-19.11.2026-VANILLA-UNOFFICIAL.zip](https://drive.google.com/file/d/1JKtJJnU1IAnKtEdJ7wzGAXXxnTFdXlhZ/view?usp=sharing) | [Infinity-X-4.2-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1J5dPBzVgeAiBxsY8UW9pzijXasTsyWXO/view?usp=sharing) |
+| AxionOS 2.9 | 16 | GApps | ⏳ Untested | [axion-2.9-NOESIS-20261119-UNOFFICIAL-GMS-m20lte.zip](https://drive.google.com/file/d/1J5cCvflkEHROVn9vfRLntbsbu2HVALKi/view?usp=sharing) | [Axion-2.9-A16-m20lte-GMS-recovery.tar.md5](https://drive.google.com/file/d/1Kos8KLUkjTKS0raJtnVBTit7JxDGmQS4/view?usp=sharing) |
 
 ## Install (clean flash)
 
@@ -42,6 +43,7 @@ aborts with signal 6.
 ## SHA-256
 
 ```
+aaa99bab2885d1296e1d331bc4147586c4e0772e18b00b4af29a14da6df2b5c5  Axion-2.9-A16-m20lte-GMS-recovery.tar.md5
 6137a97df9aceff3f89f1808ad62251b9f9f346bb56f78850930baf634e2f237  Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5
 cbb964774a44c59532c8bbac3937a8f974b8e6a62d9f053a45778967d4b7c41f  Infinity-X-4.2-m20lte-VANILLA-recovery.tar.md5
 52f41d9096a64b59c6a35484a2b81db044e426d091e8914ce164c23a6dfabf21  Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip
@@ -50,4 +52,5 @@ bcfcbda65d69c455b926e0e6e3e987d737a5b93a3514a77b48b4f8fe339ceb52  RisingOS-9-261
 59ba5bc6eb215b78fb1862d524e08905f205075746a5a2caf79601571b22b0da  RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip
 a8b4611665e5c977f1e23fa8460b0528d4898f0f1666b0987737db5c775648ad  RisingOS-9-m20lte-CORE-recovery.tar.md5
 4627265975b4f9f68d2d7a0bdb985026a7d9fc01b190d58f2c4881366630e420  RisingOS-9-m20lte-VANILLA-recovery.tar.md5
+ee94bb5248133327a1f1c9ccff62517e3a2aade7847e99b0a177e0c265457c07  axion-2.9-NOESIS-20261119-UNOFFICIAL-GMS-m20lte.zip
 ```
