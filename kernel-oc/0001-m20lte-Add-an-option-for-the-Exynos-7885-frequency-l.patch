@@ -1,0 +1,83 @@
+From 27b606dd780458d5d3211d448ea40984929769e7 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Umut=20=C3=87a=C4=9Fan=20Demirer?=
+ <umutcagand@protonmail.com>
+Date: Fri, 20 Nov 2026 08:51:10 +0300
+Subject: [PATCH] m20lte: Add an option for the Exynos 7885 frequency levels
+
+The 7904 firmware DVFS tables still list the 7885 levels with
+their voltages. CONFIG_M20_OVERCLOCK uncaps A73 to 2184 MHz,
+A53 to 1690 MHz and G3D to 1300 MHz.
+
+Change-Id: Ie87b69116187edfc07ff73f5b8d13c0bc177f6a1
+---
+ drivers/cpufreq/m20-acpm-cpufreq.c                   | 12 ++++++++++--
+ .../arm/b_r26p0/platform/exynos/m20_gpu_devfreq.c    |  4 ++++
+ drivers/soc/samsung/Kconfig                          | 11 +++++++++++
+ 3 files changed, 25 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/cpufreq/m20-acpm-cpufreq.c b/drivers/cpufreq/m20-acpm-cpufreq.c
+index 9593e035263b..b7de4cd6e4b6 100644
+--- a/drivers/cpufreq/m20-acpm-cpufreq.c
++++ b/drivers/cpufreq/m20-acpm-cpufreq.c
+@@ -57,13 +57,21 @@ struct m20_cluster {
+ 	bool boost_ready;
+ };
+ 
++#ifdef CONFIG_M20_OVERCLOCK
++#define M20_CL1_MAX_KHZ	1690000
++#define M20_CL0_MAX_KHZ	2184000
++#else
++#define M20_CL1_MAX_KHZ	1586000
++#define M20_CL0_MAX_KHZ	1768000
++#endif
++
+ static struct m20_cluster m20_clusters[] = {
+ 	{ .dom = 3, .first_cpu = 0, .last_cpu = 5,
+-	  .min_khz = 449000, .max_khz = 1586000,
++	  .min_khz = 449000, .max_khz = M20_CL1_MAX_KHZ,
+ 	  .voter = ACPM_VOTER_CPUCL1, .mif = m20_mif_cl1,
+ 	  .mif_len = ARRAY_SIZE(m20_mif_cl1) },
+ 	{ .dom = 2, .first_cpu = 6, .last_cpu = 7,
+-	  .min_khz = 936000, .max_khz = 1768000,
++	  .min_khz = 936000, .max_khz = M20_CL0_MAX_KHZ,
+ 	  .voter = ACPM_VOTER_CPUCL0, .mif = m20_mif_cl0,
+ 	  .mif_len = ARRAY_SIZE(m20_mif_cl0) },
+ };
+diff --git a/drivers/gpu/arm/b_r26p0/platform/exynos/m20_gpu_devfreq.c b/drivers/gpu/arm/b_r26p0/platform/exynos/m20_gpu_devfreq.c
+index 2fb750a37667..8d9f85fd6a4a 100644
+--- a/drivers/gpu/arm/b_r26p0/platform/exynos/m20_gpu_devfreq.c
++++ b/drivers/gpu/arm/b_r26p0/platform/exynos/m20_gpu_devfreq.c
+@@ -26,7 +26,11 @@
+ #define M20_G3D_DOM	4
+ #define M20_MIF_DOM	0
+ #define M20_G3D_MIN	343000
++#ifdef CONFIG_M20_OVERCLOCK
++#define M20_G3D_MAX	1300000
++#else
+ #define M20_G3D_MAX	1100000
++#endif
+ 
+ /* 4.4 gpu_dvfs_table: GPU kHz -> MIF floor kHz */
+ static const struct { unsigned int gpu, mif; } m20_g3d_mif[] = {
+diff --git a/drivers/soc/samsung/Kconfig b/drivers/soc/samsung/Kconfig
+index 15818d30fdf6..5209ed72aab9 100644
+--- a/drivers/soc/samsung/Kconfig
++++ b/drivers/soc/samsung/Kconfig
+@@ -165,3 +165,14 @@ config EXYNOS_ACPM_DVFS
+ 	help
+ 	  Frequency/voltage requests to the APM firmware (MIF, INT, CPU clusters,
+ 	  G3D, FSYS, CAM, DISP, AUD). Needed by the GPU driver.
++
++config M20_OVERCLOCK
++	bool "m20lte: allow the Exynos 7885 frequency levels"
++	depends on EXYNOS_ACPM_DVFS
++	default n
++	help
++	  The 7904 is a 7885 capped at A73 1768 MHz, A53 1586 MHz and G3D
++	  1100 MHz. The firmware DVFS tables still carry the 7885 levels with
++	  their voltages. Say Y to expose A73 up to 2184 MHz, A53 up to
++	  1690 MHz and G3D up to 1300 MHz (only levels the firmware lists).
++	  Not every chip is stable at these levels.
+-- 
+2.56.1
+
