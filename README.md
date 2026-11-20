@@ -17,6 +17,8 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 |---|---|---|---|---|---|---|
 | crDroid 13.1 | 17 | GApps | ⏳ Untested | [crDroid-13.1-m20lte-GAPPS.zip](https://drive.google.com/file/d/15Kruh9-AhQZp8Mq9NHEzvMnD2Av6iPlf/view?usp=sharing) | [crDroid-13.1-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1DNMiyuir-eHtDKruGS_cuu9yVKdry_vr/view?usp=sharing) | [m20lte-crdroid-sources](https://github.com/c8dhjp4tyv-bit/m20lte-crdroid-sources) |
 | crDroid 13.1 | 17 | Vanilla | ⏳ Untested | [crDroid-13.1-m20lte-VANILLA.zip](https://drive.google.com/file/d/10bIn7GUZRoPZDYj58SUvDn1DzSvqoHIC/view?usp=sharing) | [crDroid-13.1-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1DXGoB6Zef0YBXSkqMo7oNkX9j-RSrWWX/view?usp=sharing) | [m20lte-crdroid-sources](https://github.com/c8dhjp4tyv-bit/m20lte-crdroid-sources) |
+| Evolution X 12.4 | 17 | GApps | ⏳ Untested | [EvolutionX-12.4-m20lte-GAPPS.zip](https://drive.google.com/file/d/1Kypiogz6zb32Ok5whB6rlRYlrP19EXvw/view?usp=sharing) | [EvolutionX-12.4-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1_zJRCF9tnXub-X9Q5MlrIqFqmrSC-HJE/view?usp=sharing) | [m20lte-evolutionx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-evolutionx-sources) |
+| Evolution X 12.4 | 17 | Vanilla | ⏳ Untested | [EvolutionX-12.4-m20lte-VANILLA.zip](https://drive.google.com/file/d/1rgazSXykYkl2J3D8JAPADTg23mtH_Cy9/view?usp=sharing) | [EvolutionX-12.4-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/16M0nW3oQm9WOkmurKkCfEnrP4mHSjKK1/view?usp=sharing) | [m20lte-evolutionx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-evolutionx-sources) |
 | RisingOS Revived 9 | 17 | GApps | ✅ Tested | [RisingOS-9-261119-1728-CORE-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/16UaaD2BfmLai_Q4zOGdauo2ituE9dRVY/view?usp=sharing) | [RisingOS-9-m20lte-CORE-recovery.tar.md5](https://drive.google.com/file/d/1ksnDFDtnSdXBE9sGJ5sa2TnwiRwa47Ly/view?usp=sharing) | [m20lte-rising-sources](https://github.com/c8dhjp4tyv-bit/m20lte-rising-sources) |
 | RisingOS Revived 9 | 17 | Vanilla | ✅ Tested | [RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/1qg8F-aey--n-nHfNFiw4DJGQGZI0QJmc/view?usp=sharing) | [RisingOS-9-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1ZKZ39vggXpRtRU7A-UY90FA6Rr4C9Nxf/view?usp=sharing) | [m20lte-rising-sources](https://github.com/c8dhjp4tyv-bit/m20lte-rising-sources) |
 | Project Infinity X 4.2 | 17 | GApps | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip](https://drive.google.com/file/d/1NpiurifNjmIVrhIKPcByqw7vdFUW8gFW/view?usp=sharing) | [Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1AUsZxXJTBuv-UUcGaoAYLVMpUEa4vVbj/view?usp=sharing) | [m20lte-infinityx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-infinityx-sources) |
@@ -45,6 +47,10 @@ aborts with signal 6.
 ## SHA-256
 
 ```
+2fbc4992c23cb5f94f497a45f0d4fe8d9cfd79f43f9b388564a395423ce43edd  EvolutionX-12.4-m20lte-GAPPS-recovery.tar.md5
+b801f89b0932f7b25f62be03eebf57603a8fe0c4537221d7e1f945110b008fb5  EvolutionX-12.4-m20lte-GAPPS.zip
+eee04c9b6e3e8300bef8927f273a202b45ac3c4f37307adae0d71dfdb281da19  EvolutionX-12.4-m20lte-VANILLA-recovery.tar.md5
+a7cc7e945cfe54486f949431ba0129d7599fc07b4b01b245ffb8c9f77180daaa  EvolutionX-12.4-m20lte-VANILLA.zip
 6137a97df9aceff3f89f1808ad62251b9f9f346bb56f78850930baf634e2f237  Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5
 cbb964774a44c59532c8bbac3937a8f974b8e6a62d9f053a45778967d4b7c41f  Infinity-X-4.2-m20lte-VANILLA-recovery.tar.md5
 52f41d9096a64b59c6a35484a2b81db044e426d091e8914ce164c23a6dfabf21  Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip
