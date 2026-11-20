@@ -15,6 +15,8 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 
 | ROM | Android | Variant | Status | ROM zip | Recovery (Odin, AP) | Source |
 |---|---|---|---|---|---|---|
+| crDroid 13.1 | 17 | GApps | ⏳ Untested | [crDroid-13.1-m20lte-GAPPS.zip](https://drive.google.com/file/d/15Kruh9-AhQZp8Mq9NHEzvMnD2Av6iPlf/view?usp=sharing) | [crDroid-13.1-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1DNMiyuir-eHtDKruGS_cuu9yVKdry_vr/view?usp=sharing) | [m20lte-crdroid-sources](https://github.com/c8dhjp4tyv-bit/m20lte-crdroid-sources) |
+| crDroid 13.1 | 17 | Vanilla | ⏳ Untested | [crDroid-13.1-m20lte-VANILLA.zip](https://drive.google.com/file/d/10bIn7GUZRoPZDYj58SUvDn1DzSvqoHIC/view?usp=sharing) | [crDroid-13.1-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1DXGoB6Zef0YBXSkqMo7oNkX9j-RSrWWX/view?usp=sharing) | [m20lte-crdroid-sources](https://github.com/c8dhjp4tyv-bit/m20lte-crdroid-sources) |
 | RisingOS Revived 9 | 17 | GApps | ✅ Tested | [RisingOS-9-261119-1728-CORE-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/16UaaD2BfmLai_Q4zOGdauo2ituE9dRVY/view?usp=sharing) | [RisingOS-9-m20lte-CORE-recovery.tar.md5](https://drive.google.com/file/d/1ksnDFDtnSdXBE9sGJ5sa2TnwiRwa47Ly/view?usp=sharing) | [m20lte-rising-sources](https://github.com/c8dhjp4tyv-bit/m20lte-rising-sources) |
 | RisingOS Revived 9 | 17 | Vanilla | ✅ Tested | [RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/1qg8F-aey--n-nHfNFiw4DJGQGZI0QJmc/view?usp=sharing) | [RisingOS-9-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1ZKZ39vggXpRtRU7A-UY90FA6Rr4C9Nxf/view?usp=sharing) | [m20lte-rising-sources](https://github.com/c8dhjp4tyv-bit/m20lte-rising-sources) |
 | Project Infinity X 4.2 | 17 | GApps | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip](https://drive.google.com/file/d/1NpiurifNjmIVrhIKPcByqw7vdFUW8gFW/view?usp=sharing) | [Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1AUsZxXJTBuv-UUcGaoAYLVMpUEa4vVbj/view?usp=sharing) | [m20lte-infinityx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-infinityx-sources) |
@@ -51,4 +53,8 @@ bcfcbda65d69c455b926e0e6e3e987d737a5b93a3514a77b48b4f8fe339ceb52  RisingOS-9-261
 59ba5bc6eb215b78fb1862d524e08905f205075746a5a2caf79601571b22b0da  RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip
 a8b4611665e5c977f1e23fa8460b0528d4898f0f1666b0987737db5c775648ad  RisingOS-9-m20lte-CORE-recovery.tar.md5
 4627265975b4f9f68d2d7a0bdb985026a7d9fc01b190d58f2c4881366630e420  RisingOS-9-m20lte-VANILLA-recovery.tar.md5
+7151e82503feb8cf62675ec0fa927e062c3bb319ecf3884c0bc42bd4d10c0f2a  crDroid-13.1-m20lte-GAPPS-recovery.tar.md5
+c6d4bcaa194abd0fa65de14f472a6d4f6a421ce21cc56303c744a8f988552cb8  crDroid-13.1-m20lte-GAPPS.zip
+6c9e50ea9cba8c2bfe819a50f39fbd6ded281f500018d4aee792980e7194eec3  crDroid-13.1-m20lte-VANILLA-recovery.tar.md5
+f7d1c6b5e7385e90c6ac53560bda3878b96eeb4ff17ac9b7a50d4c5b87c0869f  crDroid-13.1-m20lte-VANILLA.zip
 ```
