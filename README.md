@@ -2,9 +2,9 @@
 
 ## Official
 
-| ROM | Android | Status | Download |
-|---|---|---|---|
-| **LineageOS 22.2** (official, weekly) | 15 | ✅ Tested | [download.lineageos.org/devices/m20lte](https://download.lineageos.org/devices/m20lte) |
+| ROM | Android | Status | Download | Source |
+|---|---|---|---|---|
+| **LineageOS 22.2** (official, weekly) | 15 | ✅ Tested | [download.lineageos.org/devices/m20lte](https://download.lineageos.org/devices/m20lte) | [LineageOS](https://github.com/LineageOS/android_device_samsung_m20lte) |
 
 Install guide: [wiki.lineageos.org/devices/m20lte/install](https://wiki.lineageos.org/devices/m20lte/install)
 
@@ -13,12 +13,12 @@ Install guide: [wiki.lineageos.org/devices/m20lte/install](https://wiki.lineageo
 Test builds on the Linux 5.10 kernel port. Signed with test keys.
 Each ROM zip must be flashed with **its own recovery** from the same row.
 
-| ROM | Android | Variant | Status | ROM zip | Recovery (Odin, AP) |
-|---|---|---|---|---|---|
-| RisingOS Revived 9 | 17 | GApps | ✅ Tested | [RisingOS-9-261119-1728-CORE-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/16UaaD2BfmLai_Q4zOGdauo2ituE9dRVY/view?usp=sharing) | [RisingOS-9-m20lte-CORE-recovery.tar.md5](https://drive.google.com/file/d/1ksnDFDtnSdXBE9sGJ5sa2TnwiRwa47Ly/view?usp=sharing) |
-| RisingOS Revived 9 | 17 | Vanilla | ✅ Tested | [RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/1qg8F-aey--n-nHfNFiw4DJGQGZI0QJmc/view?usp=sharing) | [RisingOS-9-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1ZKZ39vggXpRtRU7A-UY90FA6Rr4C9Nxf/view?usp=sharing) |
-| Project Infinity X 4.2 | 17 | GApps | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip](https://drive.google.com/file/d/1NpiurifNjmIVrhIKPcByqw7vdFUW8gFW/view?usp=sharing) | [Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1AUsZxXJTBuv-UUcGaoAYLVMpUEa4vVbj/view?usp=sharing) |
-| Project Infinity X 4.2 | 17 | Vanilla | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-VANILLA-UNOFFICIAL.zip](https://drive.google.com/file/d/1JKtJJnU1IAnKtEdJ7wzGAXXxnTFdXlhZ/view?usp=sharing) | [Infinity-X-4.2-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1J5dPBzVgeAiBxsY8UW9pzijXasTsyWXO/view?usp=sharing) |
+| ROM | Android | Variant | Status | ROM zip | Recovery (Odin, AP) | Source |
+|---|---|---|---|---|---|---|
+| RisingOS Revived 9 | 17 | GApps | ✅ Tested | [RisingOS-9-261119-1728-CORE-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/16UaaD2BfmLai_Q4zOGdauo2ituE9dRVY/view?usp=sharing) | [RisingOS-9-m20lte-CORE-recovery.tar.md5](https://drive.google.com/file/d/1ksnDFDtnSdXBE9sGJ5sa2TnwiRwa47Ly/view?usp=sharing) | [m20lte-rising-sources](https://github.com/c8dhjp4tyv-bit/m20lte-rising-sources) |
+| RisingOS Revived 9 | 17 | Vanilla | ✅ Tested | [RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/1qg8F-aey--n-nHfNFiw4DJGQGZI0QJmc/view?usp=sharing) | [RisingOS-9-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1ZKZ39vggXpRtRU7A-UY90FA6Rr4C9Nxf/view?usp=sharing) | [m20lte-rising-sources](https://github.com/c8dhjp4tyv-bit/m20lte-rising-sources) |
+| Project Infinity X 4.2 | 17 | GApps | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip](https://drive.google.com/file/d/1NpiurifNjmIVrhIKPcByqw7vdFUW8gFW/view?usp=sharing) | [Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1AUsZxXJTBuv-UUcGaoAYLVMpUEa4vVbj/view?usp=sharing) | [m20lte-infinityx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-infinityx-sources) |
+| Project Infinity X 4.2 | 17 | Vanilla | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-VANILLA-UNOFFICIAL.zip](https://drive.google.com/file/d/1JKtJJnU1IAnKtEdJ7wzGAXXxnTFdXlhZ/view?usp=sharing) | [Infinity-X-4.2-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1J5dPBzVgeAiBxsY8UW9pzijXasTsyWXO/view?usp=sharing) | [m20lte-infinityx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-infinityx-sources) |
 
 ## Install (clean flash)
 
