@@ -25,6 +25,8 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 | RisingOS Revived 9 | 17 | Vanilla | ✅ Tested | [RisingOS-9-261119-1807-VANILLA-COMMUNITY-m20lte.zip](https://drive.google.com/file/d/1qg8F-aey--n-nHfNFiw4DJGQGZI0QJmc/view?usp=sharing) | [RisingOS-9-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1ZKZ39vggXpRtRU7A-UY90FA6Rr4C9Nxf/view?usp=sharing) | [m20lte-rising-sources](https://github.com/c8dhjp4tyv-bit/m20lte-rising-sources) |
 | Project Infinity X 4.2 | 17 | GApps | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-GAPPS-UNOFFICIAL.zip](https://drive.google.com/file/d/1NpiurifNjmIVrhIKPcByqw7vdFUW8gFW/view?usp=sharing) | [Infinity-X-4.2-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1AUsZxXJTBuv-UUcGaoAYLVMpUEa4vVbj/view?usp=sharing) | [m20lte-infinityx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-infinityx-sources) |
 | Project Infinity X 4.2 | 17 | Vanilla | ✅ Tested | [Project_Infinity-X-4.2-m20lte-19.11.2026-VANILLA-UNOFFICIAL.zip](https://drive.google.com/file/d/1JKtJJnU1IAnKtEdJ7wzGAXXxnTFdXlhZ/view?usp=sharing) | [Infinity-X-4.2-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1J5dPBzVgeAiBxsY8UW9pzijXasTsyWXO/view?usp=sharing) | [m20lte-infinityx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-infinityx-sources) |
+| AxionOS 2.9 | 16 | GApps | ✅ Tested | [Axion-2.9-m20lte-GMS.zip](https://drive.google.com/file/d/1-BiN3FAsysg9UVdq0ZnbnkXCx5MkE6T9/view?usp=sharing) | [Axion-2.9-m20lte-GMS-recovery.tar.md5](https://drive.google.com/file/d/16tgelKjs1J0kMxOmOCSj6Ki2oMCnJc7y/view?usp=sharing) | — |
+| AxionOS 2.9 | 16 | Vanilla | ✅ Tested | [Axion-2.9-m20lte-VANILLA.zip](https://drive.google.com/file/d/1vtwmCk9TTQqgMPlqdpbZaWVDpun7GLMp/view?usp=sharing) | [Axion-2.9-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1WPDYo2plZp95Rk57DC7JB-u2DFhp0glz/view?usp=sharing) | — |
 | Lunaris 3.13 | 16 | GApps | ✅ Tested | [Lunaris-3.13-m20lte-GMS.zip](https://drive.google.com/file/d/1_7E5MqK_VDrD8ZG-KiFMmmcN2Vq4eWPt/view?usp=sharing) | [Lunaris-3.13-m20lte-GMS-recovery.tar.md5](https://drive.google.com/file/d/1p5w6z8kADKJOlOMtXVfsuNz8dksvCXK2/view?usp=sharing) | [m20lte-lunaris-sources](https://github.com/c8dhjp4tyv-bit/m20lte-lunaris-sources) |
 | Lunaris 3.13 | 16 | Vanilla | ✅ Tested | [Lunaris-3.13-m20lte-VANILLA.zip](https://drive.google.com/file/d/10GPquQD60gyxKOxAjl6JOfOfDzXxhy1z/view?usp=sharing) | [Lunaris-3.13-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1L7197vo_2q0sRN4ygmfk54TZPMX2COqQ/view?usp=sharing) | [m20lte-lunaris-sources](https://github.com/c8dhjp4tyv-bit/m20lte-lunaris-sources) |
 
@@ -55,7 +57,7 @@ installing a ROM: boot the ROM's recovery → Apply from ADB →
 
 - GApps/GMS builds: setup and the first ~10 minutes after it can be laggy while Google apps install and update in the background. It goes away on its own.
 - The system partition is EROFS (the ROMs do not fit the 3.4 GB ext4 system otherwise).
-- Android 16 builds (Lunaris) have no VoLTE yet.
+- Android 16 builds (AxionOS, Lunaris) have no VoLTE yet.
 - Test builds: report problems with a log in the Telegram group.
 
 ## SHA-256
