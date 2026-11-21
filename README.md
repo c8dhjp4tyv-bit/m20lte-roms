@@ -51,6 +51,7 @@ installing a ROM: boot the ROM's recovery → Apply from ADB →
 
 | Date | Changes | Download |
 |---|---|---|
+| 2026-11-21 (2) | GPS fix (same as below) and incoming calls: VoLTE calls were rejected after 8 s and the phone never rang. Includes the first update, flash only this one | [m20lte-update-20261121-2.zip](https://github.com/c8dhjp4tyv-bit/m20lte-roms/releases/tag/update-20261121-2) |
 | 2026-11-21 | GPS: fixed the GPS chip crash loop (location only came from Wi-Fi/cell) | [m20lte-update-20261121.zip](https://github.com/c8dhjp4tyv-bit/m20lte-roms/releases/tag/update-20261121) |
 
 ## Notes
