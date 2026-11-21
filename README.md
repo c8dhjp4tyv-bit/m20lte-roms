@@ -41,6 +41,16 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 OrangeFox (4.4 kernel) cannot install these, the Android 16/17 installer
 aborts with signal 6.
 
+## GPS fix (all unofficial builds)
+
+The builds above have a broken GPS: the chip crashes in a loop and location
+only comes from Wi-Fi/cell. Flash the fix once after installing the ROM:
+boot the ROM's recovery → Apply from ADB →
+`adb sideload m20lte-gpsd-fix-20261121.zip` → reboot. No wipe needed.
+
+Download: [m20lte-gpsd-fix-20261121.zip](https://github.com/c8dhjp4tyv-bit/m20lte-roms/releases/tag/gpsd-fix-20261121)
+(sha256 `3d706b37efeb9428627b4f666a725ecfbe18382e2b936d9c60ef8b537e3e067f`)
+
 ## Notes
 
 - GApps/GMS builds: setup and the first ~10 minutes after it can be laggy while Google apps install and update in the background. It goes away on its own.
