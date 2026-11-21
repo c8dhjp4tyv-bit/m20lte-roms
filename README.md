@@ -63,6 +63,10 @@ installing a ROM: boot the ROM's recovery → Apply from ADB →
 ## SHA-256
 
 ```
+87b015150b7683cccaf1e516b9c0dc4dc0868029e948fa0ae0eb5e587ace3f1b  Axion-2.9-m20lte-GMS-recovery.tar.md5
+7a959e123cdceefc802658d35112e32072bdae16561c161670fc83e6350a0c4a  Axion-2.9-m20lte-GMS.zip
+6b7c2351864547aa5cf97cd980ef4e276ec58c1ca47f0be4af88662544c3bfff  Axion-2.9-m20lte-VANILLA-recovery.tar.md5
+09b138e52c9fe23568cad74c360d9276f0e6ad01db0e9173d53c5ac2b371b8c4  Axion-2.9-m20lte-VANILLA.zip
 fc8eb5f2406b4d027fd8e0e70b895f9bebce7dcb238a5301fab0456d58bd2bd8  Bliss-20.2-m20lte-GAPPS-recovery.tar.md5
 1118bc9e82ee1a5d7cc58dc21b377658526e8f4fd3c32ab47de58bc2f9ad00fc  Bliss-20.2-m20lte-GAPPS.zip
 68dda38244c43acef6345df1fc1236fc320df79bb75abb483d31bb3a72668c40  Bliss-20.2-m20lte-VANILLA-recovery.tar.md5
