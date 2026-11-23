@@ -43,10 +43,17 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 OrangeFox (4.4 kernel) cannot install these, the Android 16/17 installer
 aborts with signal 6.
 
-## Updates (all unofficial builds)
+## LineageOS 24.0 (unofficial)
 
-Small update zips on top of the ROMs above. Flash the latest one after
-installing a ROM: boot the ROM's recovery → Apply from ADB →
+Android 17, Linux 5.10, build dated 2026-11-23. This build uses release keys, not the test keys used by the builds above.
+
+- [Signed ROM ZIP](https://drive.google.com/file/d/17i3X3WrK9bCOZ2LrzD2vOUutNOIvnTin/view?usp=sharing)
+- [Matching signed recovery (`recovery-signed.img`)](https://drive.google.com/file/d/1zTPKmTLhREMjJedLZDG5dbJRISETWkgr/view?usp=sharing) — raw image, not an Odin AP `.tar.md5`.
+
+## Updates (unofficial test-key builds)
+
+These update zips are for the test-key builds above, not LineageOS 24.0. Flash the latest one after
+installing a supported ROM: boot the ROM's recovery → Apply from ADB →
 `adb sideload <update>.zip` → reboot. No wipe needed.
 
 | Date | Changes | Download |
@@ -57,7 +64,7 @@ installing a ROM: boot the ROM's recovery → Apply from ADB →
 ## Notes
 
 - GApps/GMS builds: setup and the first ~10 minutes after it can be laggy while Google apps install and update in the background. It goes away on its own.
-- The system partition is EROFS (the ROMs do not fit the 3.4 GB ext4 system otherwise).
+- The unofficial test-key builds use EROFS for the system partition (they do not fit the 3.4 GB ext4 system otherwise).
 - Android 16 builds (AxionOS, Lunaris) have no VoLTE yet.
 - Test builds: report problems with a log in the Telegram group.
 
