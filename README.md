@@ -10,11 +10,12 @@ Install guide: [wiki.lineageos.org/devices/m20lte/install](https://wiki.lineageo
 
 ## Unofficial
 
-Test builds on the Linux 5.10 kernel port. Signed with test keys.
+Test builds on the Linux 5.10 kernel port. Signed with test keys unless noted.
 Each ROM zip must be flashed with **its own recovery** from the same row.
 
-| ROM | Android | Variant | Status | ROM zip | Recovery (Odin, AP) | Source |
+| ROM | Android | Variant | Status | ROM zip | Recovery | Source |
 |---|---|---|---|---|---|---|
+| LineageOS 24.0 (2026-11-23) | 17 | Vanilla, release keys | Boot and GPS tested | [lineage-24.0-20261123-UNOFFICIAL-m20lte-signed.zip](https://drive.google.com/file/d/17i3X3WrK9bCOZ2LrzD2vOUutNOIvnTin/view?usp=sharing) | [recovery-signed.img](https://drive.google.com/file/d/1zTPKmTLhREMjJedLZDG5dbJRISETWkgr/view?usp=sharing) (raw image, not Odin AP) | — |
 | crDroid 13.1 | 17 | GApps | ✅ Tested | [crDroid-13.1-m20lte-GAPPS.zip](https://drive.google.com/file/d/15Kruh9-AhQZp8Mq9NHEzvMnD2Av6iPlf/view?usp=sharing) | [crDroid-13.1-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1DNMiyuir-eHtDKruGS_cuu9yVKdry_vr/view?usp=sharing) | [m20lte-crdroid-sources](https://github.com/c8dhjp4tyv-bit/m20lte-crdroid-sources) |
 | crDroid 13.1 | 17 | Vanilla | ✅ Tested | [crDroid-13.1-m20lte-VANILLA.zip](https://drive.google.com/file/d/10bIn7GUZRoPZDYj58SUvDn1DzSvqoHIC/view?usp=sharing) | [crDroid-13.1-m20lte-VANILLA-recovery.tar.md5](https://drive.google.com/file/d/1DXGoB6Zef0YBXSkqMo7oNkX9j-RSrWWX/view?usp=sharing) | [m20lte-crdroid-sources](https://github.com/c8dhjp4tyv-bit/m20lte-crdroid-sources) |
 | Evolution X 12.4 | 17 | GApps | ✅ Tested | [EvolutionX-12.4-m20lte-GAPPS.zip](https://drive.google.com/file/d/1Kypiogz6zb32Ok5whB6rlRYlrP19EXvw/view?usp=sharing) | [EvolutionX-12.4-m20lte-GAPPS-recovery.tar.md5](https://drive.google.com/file/d/1_zJRCF9tnXub-X9Q5MlrIqFqmrSC-HJE/view?usp=sharing) | [m20lte-evolutionx-sources](https://github.com/c8dhjp4tyv-bit/m20lte-evolutionx-sources) |
@@ -32,9 +33,10 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 
 ## Install (clean flash)
 
-1. Odin (or `odin4` on Linux): put the recovery `.tar.md5` in **AP** and flash.
+1. For a `.tar.md5` recovery, flash it in **AP** using Odin (or `odin4` on Linux).
    Do not use heimdall with the `.tar.md5`, it writes the tar raw and the
-   bootloader then shows "invalid kernel length".
+   bootloader then shows "invalid kernel length". For a raw `.img` recovery,
+   use a tool that supports writing raw images to the recovery partition, such as `samloader`.
 2. Boot that recovery (Vol Up + Power).
 3. Factory reset → **Format data** (needed when coming from another ROM).
 4. Apply update → Apply from ADB → `adb sideload <rom>.zip`.
@@ -43,17 +45,10 @@ Each ROM zip must be flashed with **its own recovery** from the same row.
 OrangeFox (4.4 kernel) cannot install these, the Android 16/17 installer
 aborts with signal 6.
 
-## LineageOS 24.0 (unofficial)
-
-Android 17, Linux 5.10, build dated 2026-11-23. This build uses release keys, not the test keys used by the builds above.
-
-- [Signed ROM ZIP](https://drive.google.com/file/d/17i3X3WrK9bCOZ2LrzD2vOUutNOIvnTin/view?usp=sharing)
-- [Matching signed recovery (`recovery-signed.img`)](https://drive.google.com/file/d/1zTPKmTLhREMjJedLZDG5dbJRISETWkgr/view?usp=sharing) — raw image, not an Odin AP `.tar.md5`.
-
 ## Updates (unofficial test-key builds)
 
-These update zips are for the test-key builds above, not LineageOS 24.0. Flash the latest one after
-installing a supported ROM: boot the ROM's recovery → Apply from ADB →
+Flash the latest update after installing a supported test-key ROM:
+boot the ROM's recovery → Apply from ADB →
 `adb sideload <update>.zip` → reboot. No wipe needed.
 
 | Date | Changes | Download |
